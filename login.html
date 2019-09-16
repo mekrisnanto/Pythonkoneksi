@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+    body {
+      background-color: blue; 
+    }
+</style>
+</head>
+<body>
+    <div class="imgcontainer">
+      <class="register"> <p><a href="http://localhost:5000/home">Sign Up Now</a></p>
+      <p><a href="http://localhost:5000/">Home</a></p>
+    </div>
+     
+
+    <center><div class="menu-card">
+      <label for="uname"><b>Username</b></label>
+      <input id="username" type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input id ="password" type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button onclick="validate()">Sign In</button></center>
+    </div>
+
+    <div class="container" style="background-color:blue">
+    </div>
+</div>
+
+<script>
+function validate(){
+var username = document.getElementById("username").value;
+var password = document.getElementById("password").value;
+if (username == "admin" && password == "admin123"){
+alert ("login sukses");
+window.location = "http://localhost:5000/home"; //
+}else{
+alert("username atau kata sandi salah");
+window.location = "http://localhost//home";
+    }
+}
+</script>
+
+</body>
+</html>

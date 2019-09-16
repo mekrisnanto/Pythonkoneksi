@@ -1,0 +1,29 @@
+<html>
+   <head>
+   <h1>DATA SISWA</h1>
+   </head>   
+   <body>
+      <form action = "{{ url_for('addrec') }}" method = "POST">
+         <h3>--------------------------</h3>
+         Nomor<br>
+         <input type = "integer" name = "id" /></br>
+                       
+         NAMA<br>
+         <input type = "varchar" name = "bi" /><br>
+         
+         ALAMAT<br>
+         <input type = "varchar" name = "keu" /><br>
+       
+         NIK<br>
+         <input type = "integer" name = "nik" /><br>
+         
+         NO TELP<br>
+         <input type = "integer" name = "notelp" /><br>   
+         
+         NAMA ORANGTUA<br>
+         <input type = "varchar" name = "namaortu" /><br> 
+   
+         <input type = "submit" value = "submit" /><br>
+      </form>
+   </body>
+</html>
